@@ -8,10 +8,10 @@ function Login() {
     <div className="login_page">
       <div className="title">Login</div>
       <div className="email">Email</div>
-      <div className="email_field"></div>
+      <input type="text" required className="email_field"></input>
       <div className="password">Password</div>
-      <div className="password_field"></div>
-      <a className="login_button" href="/error">
+      <input type="password" required className="password_field"></input>
+      <a className="login_button" href="/home">
         Login
       </a>
       <a className="back_button" href="/">

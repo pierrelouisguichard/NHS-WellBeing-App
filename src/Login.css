@@ -24,10 +24,11 @@
 .email_field {
   position: absolute;
   background-color: transparent;
-  top: 50%;
+  top: 47%;
   width: 340px;
   border: none;
   border-bottom: 3px solid #e89059;
+  font-size: x-large;
 }
 
 .password {
@@ -40,10 +41,11 @@
 .password_field {
   position: absolute;
   background-color: transparent;
-  top: 65%;
+  top: 62%;
   width: 340px;
   border: none;
   border-bottom: 3px solid #e89059;
+  font-size: x-large;
 }
 
 .login_button {
@@ -57,11 +59,15 @@
   padding: 8px 15px;
   color: #fae7ce;
   border-radius: 50px;
-  transition: background-color 0.3s ease;
-
+  transition: background-color 0.3s ease, color 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.login_button:hover {
+  background: #fae7ce;
+  color: #e89059;
 }
 
 .back_button {
