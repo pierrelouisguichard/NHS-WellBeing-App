@@ -1,0 +1,20 @@
+/* Error.css */
+
+.error-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #e89059; /* Orange background */
+  color: #fff; /* White text */
+}
+
+.error-icon {
+  font-size: 4rem; /* Adjust the size of the icon */
+}
+
+.error-text {
+  font-size: 1.5rem; /* Adjust the size of the text */
+  margin-top: 20px; /* Add some space between the icon and text */
+}

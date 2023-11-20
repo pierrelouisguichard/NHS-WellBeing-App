@@ -9,13 +9,33 @@
   justify-content: center;
 }
 
+.home-text {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: #702b00;
+  font-size: larger;
+}
+
 .pic-of-the-day {
   position: absolute;
-  top: 10%;
+  top: 8%;
   width: 90%;
-  height: 35%;
+  height: 37%;
   background-color: beige;
   border-radius: 10px;
+}
+
+.slider-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 80%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .wellbeing-button {

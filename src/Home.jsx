@@ -6,13 +6,24 @@ import {
   faMagnifyingGlass,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Slider from "./Slider";
 
 function Home() {
   return (
     <div className="home-page">
-      <div className="pic-of-the-day"></div>
-      <div className="wellbeing-button"></div>
-      <div className="events-button"></div>
+      <div className="pic-of-the-day">
+        <p className="home-text">Picture of the day!</p>
+        <div className="slider-container">
+          <Slider />
+        </div>
+      </div>
+      <a className="wellbeing-button" href="/error">
+        <p className="home-text">Well Being</p>
+      </a>
+      <a className="events-button" href="/error">
+        <p className="home-text">Events</p>
+      </a>
       <div className="home-icon">
         <FontAwesomeIcon icon={faHouse} />
       </div>
