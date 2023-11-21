@@ -24,6 +24,7 @@
   height: 37%;
   background-color: beige;
   border-radius: 10px;
+  max-width: 400px;
 }
 
 .slider-container {
@@ -45,6 +46,7 @@
   height: 20%;
   background-color: beige;
   border-radius: 10px;
+  max-width: 400px;
 }
 
 .events-button {
@@ -54,6 +56,7 @@
   height: 20%;
   background-color: beige;
   border-radius: 10px;
+  max-width: 400px;
 }
 
 .search-icon {
@@ -64,6 +67,13 @@
   font-size: xx-large;
 }
 
+@media screen and (min-width: 450px) {
+  .search-icon {
+    right: 50%; /* Keep it centered horizontally */
+    transform: translateX(50%) translateX(180px); /* Move 200px to the right */
+  }
+}
+
 .home-icon {
   position: absolute;
   bottom: 3%;
@@ -72,12 +82,25 @@
   font-size: xx-large;
 }
 
+@media screen and (min-width: 450px) {
+  .home-icon {
+    left: 50%; /* Keep it centered horizontally */
+    transform: translateX(-50%) translateX(-180px); /* Move 200px to the left */
+  }
+}
+
 .profile-icon {
   position: absolute;
   bottom: 3%;
   right: 25%;
   color: beige;
   font-size: xx-large;
+}
+@media screen and (min-width: 450px) {
+  .profile-icon {
+    right: 50%; /* Keep it centered horizontally */
+    transform: translateX(50%) translateX(110px); /* Move 200px to the right */
+  }
 }
 
 .upload-button {
