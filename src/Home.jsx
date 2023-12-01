@@ -1,11 +1,6 @@
 import React from "react";
 import "./Home.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHouse,
-  faMagnifyingGlass,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+import Navbar from "./Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Slider from "./Slider";
 import image1 from "./assets/events.png";
@@ -32,23 +27,23 @@ function Home() {
           <Slider />
         </div>
       </div>
-      <a className="wellbeing-button" href="/error">
+      <a className="button wellbeing-button" href="/error">
         <p className="home-text">Well Being</p>
         <img src={image2} className="img" />
       </a>
-      <a className="events-button" href="/error">
+      <a className="button other1-button" href="/report">
+        <p className="home-text">Other1</p>
+        {/* <img src={image2} className="img" /> */}
+      </a>
+      <a className="button events-button" href="/error">
         <p className="home-text">Events</p>
         <img src={image1} className="img" />
       </a>
-      <a className="home-icon" href="/">
-        <FontAwesomeIcon icon={faHouse} />
+      <a className="button other2-button" href="/error">
+        <p className="home-text">Other2</p>
+        {/* <img src={image1} className="img" /> */}
       </a>
-      <a className="search-icon" href="/search">
-        <FontAwesomeIcon icon={faMagnifyingGlass} />
-      </a>
-      <a className="profile-icon" href="/error">
-        <FontAwesomeIcon icon={faUser} />
-      </a>
+      <Navbar />
     </div>
   );
 }

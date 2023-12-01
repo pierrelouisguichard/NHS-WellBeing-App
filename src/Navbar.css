@@ -1,0 +1,20 @@
+.icon {
+  position: absolute;
+  bottom: 3%;
+  color: white;
+  font-size: xx-large;
+}
+
+.home-icon {
+  left: 5%;
+  @media (min-width: 400px) {
+    left: calc(50% - 180px);
+  }
+}
+
+.search-icon {
+  right: 5%;
+  @media (min-width: 400px) {
+    right: calc(50% - 180px);
+  }
+}

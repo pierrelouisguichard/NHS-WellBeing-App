@@ -9,22 +9,13 @@
   justify-content: center;
 }
 
-.home-text {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  color: #702b00;
-  font-size: larger;
-}
-
 .pic-of-the-day {
   position: absolute;
   top: 8%;
-  width: 90%;
+  width: 400px;
   height: 37%;
   background-color: beige;
   border-radius: 10px;
-  max-width: 400px;
 }
 
 .slider-container {
@@ -34,73 +25,53 @@
   transform: translate(-50%, -50%);
   width: 90%;
   height: 80%;
-  background-color: white;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.wellbeing-button {
+.home-text {
   position: absolute;
-  top: 47%;
-  width: 90%;
+  top: 5%;
+  left: 5%;
+  color: #702b00;
+  font-size: larger;
+}
+
+.button {
+  position: absolute;
+  width: 190px;
   height: 20%;
   background-color: beige;
   border-radius: 10px;
-  max-width: 400px;
+  left: 50%;
+}
+
+.wellbeing-button {
+  top: 47%;
+  transform: translateX(-200px);
+}
+
+.other1-button {
+  top: 47%;
+  transform: translateX(10px);
 }
 
 .events-button {
-  position: absolute;
   top: 69%;
-  width: 90%;
-  height: 20%;
-  background-color: beige;
-  border-radius: 10px;
-  max-width: 400px;
+  transform: translateX(-200px);
 }
 
-.search-icon {
+.other2-button {
+  top: 69%;
+  transform: translateX(10px);
+}
+
+.img {
   position: absolute;
-  bottom: 3%;
-  right: 6%;
-  color: beige;
-  font-size: xx-large;
-}
-
-@media screen and (min-width: 450px) {
-  .search-icon {
-    right: 50%; /* Keep it centered horizontally */
-    transform: translateX(50%) translateX(180px); /* Move 200px to the right */
-  }
-}
-
-.home-icon {
-  position: absolute;
-  bottom: 3%;
-  left: 6%;
-  color: beige;
-  font-size: xx-large;
-}
-
-@media screen and (min-width: 450px) {
-  .home-icon {
-    left: 50%; /* Keep it centered horizontally */
-    transform: translateX(-50%) translateX(-180px); /* Move 200px to the left */
-  }
-}
-
-.profile-icon {
-  position: absolute;
-  bottom: 3%;
-  right: 25%;
-  color: beige;
-  font-size: xx-large;
-}
-@media screen and (min-width: 450px) {
-  .profile-icon {
-    right: 50%; /* Keep it centered horizontally */
-    transform: translateX(50%) translateX(110px); /* Move 200px to the right */
-  }
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, -50%);
 }
 
 .upload-button {
@@ -126,10 +97,4 @@
   top: 0;
   left: 0;
   opacity: 0;
-}
-
-.img {
-  position: absolute;
-  right: 10%;
-  height: 100%;
 }

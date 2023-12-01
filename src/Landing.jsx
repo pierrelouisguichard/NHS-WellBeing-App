@@ -7,11 +7,8 @@ function Landing() {
       <div className="page">
         <div className="logo"></div>
         <div className="nhs_logo"></div>
-        <a className="login" href="/login">
-          Login
-        </a>
-        <a className="create_account" href="/error">
-          Create Account
+        <a className="login" href="/home">
+          Continue
         </a>
       </div>
     </div>
