@@ -32,7 +32,7 @@ function Home() {
         <img src={image2} className="img" />
       </a>
       <a className="button other1-button" href="/report">
-        <p className="home-text">Other1</p>
+        <p className="home-text">Support</p>
         {/* <img src={image2} className="img" /> */}
       </a>
       <a className="button events-button" href="/error">
@@ -40,7 +40,7 @@ function Home() {
         <img src={image1} className="img" />
       </a>
       <a className="button other2-button" href="/error">
-        <p className="home-text">Other2</p>
+        <p className="home-text">Contact</p>
         {/* <img src={image1} className="img" /> */}
       </a>
       <Navbar />

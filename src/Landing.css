@@ -41,8 +41,6 @@
   padding: 8px 15px;
   color: #29414e;
   border-radius: 50px;
-  transition: background-color 0.3s ease;
-
   display: flex;
   align-items: center;
   justify-content: center;

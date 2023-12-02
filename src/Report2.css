@@ -1,0 +1,31 @@
+.checkbox-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -100px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  margin-right: 10px;
+  width: 30px; /* Adjust the checkbox width */
+  height: 30px; /* Adjust the checkbox height */
+  border: 2px solid white; /* Dark blue border */
+  border-radius: 4px;
+  background-color: transparent; /* Transparent background */
+  appearance: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: white; /* Background color when checked */
+}
+
+.checkbox-text {
+  color: white;
+  font-size: 24px; /* Adjust the font size */
+}

@@ -1,73 +1,42 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./Navbar";
 import "./Report.css";
-import BackButton from "./BackButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function Report() {
-  const handleReport = (anonymously) => {
-    console.log(anonymously ? "Reporting Anonymously" : "Entering Name");
-  };
-  const [bullyingChecked, setBullyingChecked] = useState(false);
-  const [harassmentChecked, setHarassmentChecked] = useState(false);
-  const [sexualHarassmentChecked, setSexualHarassmentChecked] = useState(false);
-  const [discriminationChecked, setDiscriminationChecked] = useState(false);
-
   return (
     <div className="report-background">
-      <div className="dark-blue-strip"></div>
-      <div className="report-title">Report</div>
-      <div className="darker-strip"></div>
-      <BackButton />
+      <div className="strip dark-blue-strip"></div>
+      <div>
+        <a className="back_arrow" href="/home">
+          <FontAwesomeIcon icon={faArrowLeft} />
+        </a>
+      </div>
+      <div className="report-title">Report & Support</div>
+      <div className="strip darker-strip"></div>
       <Navbar />
-
-      {/* Checkbox section */}
-      <div className="checkbox-section">
-        <label>
-          <input
-            type="checkbox"
-            checked={bullyingChecked}
-            onChange={() => setBullyingChecked(!bullyingChecked)}
-          />
-          <span className="checkbox-text">Bullying</span>
-        </label>
-
-        <label>
-          <input
-            type="checkbox"
-            checked={harassmentChecked}
-            onChange={() => setHarassmentChecked(!harassmentChecked)}
-          />
-          <span className="checkbox-text">Harassment</span>
-        </label>
-
-        <label>
-          <input
-            type="checkbox"
-            checked={sexualHarassmentChecked}
-            onChange={() =>
-              setSexualHarassmentChecked(!sexualHarassmentChecked)
-            }
-          />
-          <span className="checkbox-text">Sexual Harassment</span>
-        </label>
-
-        <label>
-          <input
-            type="checkbox"
-            checked={discriminationChecked}
-            onChange={() => setDiscriminationChecked(!discriminationChecked)}
-          />
-          <span className="checkbox-text">Discrimination</span>
-        </label>
-      </div>
-      <div className="button-section">
-        <button className="report-button" onClick={() => handleReport(true)}>
-          Report Anonymously
-        </button>
-        <button className="report-button" onClick={() => handleReport(false)}>
-          Enter Name
-        </button>
-      </div>
+      <p className="report-text">
+        {" "}
+        The NHS condemns bullying and harassment, prioritising a safe
+        environment. <br />
+        <br />
+        Staff can report incidents anonymously or with their contact details,
+        ensuring a confidential platform to address concerns and foster a
+        culture of respect.
+        <br />
+        <br />
+        Bullying is when someone repeatedly hurts or scares others on purpose.
+        Harassment is unwanted actions or words that create a scary or
+        uncomfortable environment, often based on things like race or gender.
+        Both are not okay and can make a workplace unfriendly.
+      </p>
+      <a className="report-button report-button1" href="/report5">
+        Report with Contact Details
+      </a>
+      <a className="report-button report-button2" href="/report1">
+        Report Anonymously
+      </a>
     </div>
   );
 }

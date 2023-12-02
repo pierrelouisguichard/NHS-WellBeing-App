@@ -1,0 +1,21 @@
+.terms-container {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 400px;
+  font-family: Arial, sans-serif;
+}
+
+.tos-back-arrow {
+  color: black;
+  position: absolute;
+  font-size: xx-large;
+  top: 5%;
+  left: 5%;
+
+  @media (min-width: 400px) {
+    left: calc(50% - 180px);
+  }
+}
