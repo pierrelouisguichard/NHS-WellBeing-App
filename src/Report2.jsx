@@ -7,10 +7,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function Report2() {
-  const [bullyingChecked, setBullyingChecked] = useState(false);
-  const [harassmentChecked, setHarassmentChecked] = useState(false);
-  const [sexualHarassmentChecked, setSexualHarassmentChecked] = useState(false);
-  const [discriminationChecked, setDiscriminationChecked] = useState(false);
+  const [selectedCheckbox, setSelectedCheckbox] = useState(null);
+
+  const handleCheckboxChange = (checkboxName) => {
+    setSelectedCheckbox(checkboxName);
+  };
+
+  const isCheckboxSelected = (checkboxName) => {
+    return selectedCheckbox === checkboxName;
+  };
+
   return (
     <div>
       <div className="report-background">
@@ -28,8 +34,8 @@ function Report2() {
           <label>
             <input
               type="checkbox"
-              checked={bullyingChecked}
-              onChange={() => setBullyingChecked(!bullyingChecked)}
+              checked={isCheckboxSelected("bullying")}
+              onChange={() => handleCheckboxChange("bullying")}
             />
             <span className="checkbox-text">Bullying</span>
           </label>
@@ -37,8 +43,8 @@ function Report2() {
           <label>
             <input
               type="checkbox"
-              checked={harassmentChecked}
-              onChange={() => setHarassmentChecked(!harassmentChecked)}
+              checked={isCheckboxSelected("harassment")}
+              onChange={() => handleCheckboxChange("harassment")}
             />
             <span className="checkbox-text">Harassment</span>
           </label>
@@ -46,10 +52,8 @@ function Report2() {
           <label>
             <input
               type="checkbox"
-              checked={sexualHarassmentChecked}
-              onChange={() =>
-                setSexualHarassmentChecked(!sexualHarassmentChecked)
-              }
+              checked={isCheckboxSelected("sexualHarassment")}
+              onChange={() => handleCheckboxChange("sexualHarassment")}
             />
             <span className="checkbox-text">Sexual Harassment</span>
           </label>
@@ -57,15 +61,17 @@ function Report2() {
           <label>
             <input
               type="checkbox"
-              checked={discriminationChecked}
-              onChange={() => setDiscriminationChecked(!discriminationChecked)}
+              checked={isCheckboxSelected("discrimination")}
+              onChange={() => handleCheckboxChange("discrimination")}
             />
             <span className="checkbox-text">Discrimination</span>
           </label>
         </div>
         <a
-          className="override-button report-button report-button2"
-          href="/report3"
+          className={`override-button report-button report-button2 ${
+            selectedCheckbox ? "" : "disabled"
+          }`}
+          href={selectedCheckbox ? "/report3" : "#"}
         >
           Continue
         </a>

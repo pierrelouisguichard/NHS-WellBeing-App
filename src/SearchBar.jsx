@@ -17,14 +17,15 @@ const SearchBar = ({ data }) => {
   };
 
   return (
-    <div>
+    <div className="searchbar-container">
       <input
+        className="searchbar-input"
         type="text"
         placeholder="Search..."
         value={searchTerm}
         onChange={handleSearch}
       />
-      <ul>
+      <ul className="searchbar-results">
         {searchResults.map((result, index) => (
           <li key={index}>{result}</li>
         ))}

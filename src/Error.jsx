@@ -1,7 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGear, faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faGear } from "@fortawesome/free-solid-svg-icons";
 import "./Error.css";
+import Navbar from "./Navbar";
 
 function Error() {
   return (
@@ -10,9 +11,7 @@ function Error() {
         <FontAwesomeIcon icon={faGear} spinPulse />
       </div>
       <p className="error-text">This page doesn't exist.</p>
-      <a className="home-icon" href="/home">
-        <FontAwesomeIcon icon={faHouse} />
-      </a>
+      <Navbar />
     </div>
   );
 }

@@ -1,12 +1,7 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 import "./Search.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHouse,
-  faMagnifyingGlass,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+import Navbar from "./Navbar";
 
 const data = [
   "Yoga",
@@ -23,15 +18,7 @@ function Search() {
       <div className="search-bar-position">
         <SearchBar data={data} />
       </div>
-      <a className="home-icon" href="/home">
-        <FontAwesomeIcon icon={faHouse} />
-      </a>
-      <a className="search-icon" href="/search">
-        <FontAwesomeIcon icon={faMagnifyingGlass} />
-      </a>
-      <a className="profile-icon" href="/error">
-        <FontAwesomeIcon icon={faUser} />
-      </a>
+      <Navbar />
     </div>
   );
 }

@@ -30,7 +30,13 @@ function Report5() {
   return (
     <div>
       <div className="report-background">
-        {/* ... (your existing code) ... */}
+        <div className="strip dark-blue-strip"></div>
+        <div>
+          <a className="back_arrow" href="/report">
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </a>
+        </div>
+        <div className="report-title">Report</div>
         <div className="report-name">Name</div>
         <input
           type="text"

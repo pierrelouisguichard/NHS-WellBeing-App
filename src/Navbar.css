@@ -18,3 +18,10 @@
     right: calc(50% - 180px);
   }
 }
+
+.user-icon {
+  left: 23%;
+  @media (min-width: 400px) {
+    left: calc(50% - 110px);
+  }
+}

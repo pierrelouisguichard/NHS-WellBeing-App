@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Slider from "./Slider";
 import image1 from "./assets/events.png";
 import image2 from "./assets/wellbeing.png";
+import image3 from "./assets/hands.png";
+import image4 from "./assets/Contact.png";
 
 function Home() {
   return (
@@ -33,7 +35,7 @@ function Home() {
       </a>
       <a className="button other1-button" href="/report">
         <p className="home-text">Support</p>
-        {/* <img src={image2} className="img" /> */}
+        <img src={image3} className="hands img" />
       </a>
       <a className="button events-button" href="/error">
         <p className="home-text">Events</p>
@@ -41,7 +43,7 @@ function Home() {
       </a>
       <a className="button other2-button" href="/error">
         <p className="home-text">Contact</p>
-        {/* <img src={image1} className="img" /> */}
+        <img src={image4} className="img" />
       </a>
       <Navbar />
     </div>

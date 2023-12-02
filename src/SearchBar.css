@@ -1,0 +1,13 @@
+.searchbar-container {
+  text-align: center; /* Center the input and results */
+}
+
+.searchbar-input {
+  width: 80vw; /* Set the width to 80vw */
+  padding: 10px; /* Add padding for better appearance */
+}
+
+.searchbar-results {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
