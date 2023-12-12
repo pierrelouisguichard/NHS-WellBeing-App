@@ -11,6 +11,11 @@ import Report3 from "./Report3";
 import Report4 from "./Report4";
 import Report5 from "./Report5";
 import TermsAndConditions from "./TermsAndConditions";
+import WellbeingPage from "./WellbeingPage";
+import BereavementAndLossPage from "./BereavementAndLossPage";
+import HealthyEatingPhysicalHealthPage from "./HealthyEatingPhysicalHealthPage"
+import MentalHealthPage from "./MentalHealthPage"
+import StressAtWorkPage from "./StressAtWorkPage"
 
 function App() {
   return (
@@ -28,6 +33,11 @@ function App() {
         <Route path="/report4" element={<Report4 />} />
         <Route path="/report5" element={<Report5 />} />
         <Route path="/termsandconditions" element={<TermsAndConditions />} />
+        <Route path="/wellbeingpage" element={<WellbeingPage />} />
+        <Route path="/bereavement" element={<BereavementAndLossPage />} />
+        <Route path="/healthyeating" element={<HealthyEatingPhysicalHealthPage />} />
+        <Route path="/mentalhealth" element={<MentalHealthPage />} />
+        <Route path="/stressatwork" element={<StressAtWorkPage />} />
       </Routes>
     </>
   );

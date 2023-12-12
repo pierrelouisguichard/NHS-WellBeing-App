@@ -29,7 +29,7 @@ function Home() {
           <Slider />
         </div>
       </div>
-      <a className="button wellbeing-button" href="/error">
+      <a className="button wellbeing-button-home" href="/wellbeingpage">
         <p className="home-text">Well Being</p>
         <img src={image2} className="img" />
       </a>

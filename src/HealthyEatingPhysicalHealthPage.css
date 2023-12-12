@@ -1,0 +1,29 @@
+/* HealthyEatingPhysicalHealthPage.css & BereavementAndLossPage.css */
+.healthy-eating-physical-health-container,
+.bereavement-loss-container {
+  background-color: #f4d8c6; /* Background color */
+  color: #4f2c1d; /* Text color */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.healthy-eating-physical-health-container h1,
+.bereavement-loss-container h1 {
+  text-align: center;
+}
+
+.healthy-eating-physical-health-container ul,
+.bereavement-loss-container ul {
+  list-style: inside square;
+}
+
+.healthy-eating-physical-health-container a,
+.bereavement-loss-container a {
+  color: #4f2c1d; /* Text color for links */
+  text-decoration: none;
+}
+
+.healthy-eating-physical-health-container a:hover,
+.bereavement-loss-container a:hover {
+  text-decoration: underline;
+}

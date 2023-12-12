@@ -1,0 +1,75 @@
+/* WellbeingPage.css */
+.wellbeing-container {
+  background-color: #e89059;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wellbeing-nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  font-size: 24px; /* Adjust as needed */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333; /* Adjust as needed */
+}
+
+.wellbeing-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Add this line to center the buttons horizontally */
+  justify-content: center; /* Add this line to center the buttons vertically */
+  height: 100%; /* Add this line to make the container take the full height */
+}
+
+.wellbeing-button {
+  background-color: #fffaf0; /* Light color for buttons */
+  color: #151212; /* Text color for buttons */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px; /* Adjust radius as needed */
+  border: 1px solid #f4c7ab; /* Border color to match background */
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Shadow effect */
+  font-size: 16px; /* Adjust as needed */
+}
+
+.wellbeing-button:hover {
+  background-color: #e6e6e6; /* Slightly darker on hover */
+}
+
+.wellbeing-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.home-button,
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Adjust as needed */
+}
+
+
+.button-link {
+  text-decoration: none;
+  color: black;
+}
+
+/* You may need to adjust colors and sizes further to match your exact design */

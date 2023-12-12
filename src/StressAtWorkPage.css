@@ -1,0 +1,24 @@
+/* StressAtWorkPage.css */
+.stress-work-container {
+  background-color: #f4d8c6; /* Choose a background color that matches your design */
+  color: #4f2c1d; /* Choose a text color that matches your design */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.stress-work-container h1 {
+  text-align: center;
+}
+
+.stress-work-container ul {
+  list-style: inside square;
+}
+
+.stress-work-container .resources a {
+  color: #4f2c1d; /* Same as text color for consistency */
+  text-decoration: none;
+}
+
+.stress-work-container .resources a:hover {
+  text-decoration: underline;
+}

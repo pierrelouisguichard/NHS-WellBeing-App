@@ -1,0 +1,35 @@
+/* MentalHealthPage.css */
+
+/* body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4d8c6;
+  color: #4f2c1d;
+} */
+
+.mental-health-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  color: #4f2c1d;
+  margin-bottom: 20px;
+}
+
+.content {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 300px;
+  margin-bottom: 20px;
+}
+
+/* Add additional styles as needed */
