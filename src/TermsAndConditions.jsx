@@ -6,11 +6,6 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 const TermsAndConditions = () => {
   return (
     <div>
-      <div>
-        <a className="tos-back-arrow" href="/report5">
-          <FontAwesomeIcon icon={faArrowLeft} />
-        </a>
-      </div>
       <div className="terms-container">
         <h1>Terms and Conditions</h1>
         <p>

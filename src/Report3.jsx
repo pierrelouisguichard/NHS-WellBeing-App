@@ -19,19 +19,29 @@ function Report3() {
         <div className="strip darker-strip"></div>
         <p className="report-text">
           We understand it's tough. More details help us assist you and others
-          better. Include when, where, and what happened. Mentioning names won't
-          result in direct action but aids prevention. You choose if you want to
-          include identifiable info—it's optional.
-          <br />
-          <br /> Refer to our duty of care guidance for details. Your comfort
-          and privacy matter.
+          better. Include when, where, and what happened.—it's optional.
         </p>
         <Navbar />
-        <div className="report3-container">
-          <div className="report3-label">
-            Please provide information on the report you would like to make:
-            (Optional)
+        <div className="report3-container2">
+          <div className="report3-label">What happened?: (Optional)</div>
+          <div className="report3-textbox">
+            <input type="text" className="report3-input-box" />
           </div>
+        </div>
+        <div className="report3-container3">
+          <div className="report3-label">When did it happen?: (Optional)</div>
+          <div className="report3-textbox">
+            <input type="text" className="report3-input-box" />
+          </div>
+        </div>
+        <div className="report3-container">
+          <div className="report3-label">Where did it happen? (Optional)</div>
+          <div className="report3-textbox">
+            <input type="text" className="report3-input-box" />
+          </div>
+        </div>
+        <div className="report3-container4">
+          <div className="report3-label">Who was there? (Optional)</div>
           <div className="report3-textbox">
             <input type="text" className="report3-input-box" />
           </div>

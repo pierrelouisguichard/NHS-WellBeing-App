@@ -27,5 +27,12 @@ input[type="checkbox"]:checked {
 
 .checkbox-text {
   color: white;
-  font-size: 24px; /* Adjust the font size */
+  font-size: 22px; /* Adjust the font size */
+}
+
+.report2-text {
+  color: white;
+  font-size: 15px;
+  max-width: 400px;
+  width: 100%;
 }

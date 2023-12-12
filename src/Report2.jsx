@@ -39,7 +39,11 @@ function Report2() {
             />
             <span className="checkbox-text">Bullying</span>
           </label>
-
+          <p className="report2-text">
+            Bullying is when someone intentionally hurts or frightens others,
+            repeatedly. It can be verbal, physical, or online. Remember, it's
+            not okay, and you don't have to face it alone.
+          </p>
           <label>
             <input
               type="checkbox"
@@ -48,16 +52,11 @@ function Report2() {
             />
             <span className="checkbox-text">Harassment</span>
           </label>
-
-          <label>
-            <input
-              type="checkbox"
-              checked={isCheckboxSelected("sexualHarassment")}
-              onChange={() => handleCheckboxChange("sexualHarassment")}
-            />
-            <span className="checkbox-text">Sexual Harassment</span>
-          </label>
-
+          <p className="report2-text">
+            Harassment is when someone bothers or intimidates you on purpose. It
+            can happen in different ways, like unwanted comments or actions.
+            It's important to know it's not okay, and you can seek support.
+          </p>
           <label>
             <input
               type="checkbox"
@@ -65,6 +64,20 @@ function Report2() {
               onChange={() => handleCheckboxChange("discrimination")}
             />
             <span className="checkbox-text">Discrimination</span>
+          </label>
+          <p className="report2-text">
+            Discrimination occurs when someone treats you unfairly based on
+            factors like race, gender, or religion. It's wrong, and everyone
+            deserves equal respect. Don't hesitate to speak up and seek
+            assistance.
+          </p>
+          <label>
+            <input
+              type="checkbox"
+              checked={isCheckboxSelected("other")}
+              onChange={() => handleCheckboxChange("other")}
+            />
+            <span className="checkbox-text">Other</span>
           </label>
         </div>
         <a

@@ -5,6 +5,12 @@
   font-size: xx-large;
 }
 
+.nav-logo {
+  position: absolute;
+  bottom: 1%;
+  width: 100px;
+}
+
 .home-icon {
   left: 5%;
   @media (min-width: 400px) {

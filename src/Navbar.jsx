@@ -6,10 +6,12 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
+import image1 from "./assets/LOGO copy.png";
 
 function Navbar() {
   return (
     <>
+      <img src={image1} className="nav-logo" />
       <a className="icon home-icon" href="/home">
         <FontAwesomeIcon icon={faHouse} />
       </a>

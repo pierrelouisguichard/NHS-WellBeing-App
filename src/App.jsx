@@ -10,12 +10,13 @@ import Report2 from "./Report2";
 import Report3 from "./Report3";
 import Report4 from "./Report4";
 import Report5 from "./Report5";
+import TOS from "./TOS";
 import TermsAndConditions from "./TermsAndConditions";
 import WellbeingPage from "./WellbeingPage";
 import BereavementAndLossPage from "./BereavementAndLossPage";
-import HealthyEatingPhysicalHealthPage from "./HealthyEatingPhysicalHealthPage"
-import MentalHealthPage from "./MentalHealthPage"
-import StressAtWorkPage from "./StressAtWorkPage"
+import HealthyEatingPhysicalHealthPage from "./HealthyEatingPhysicalHealthPage";
+import MentalHealthPage from "./MentalHealthPage";
+import StressAtWorkPage from "./StressAtWorkPage";
 
 function App() {
   return (
@@ -35,9 +36,13 @@ function App() {
         <Route path="/termsandconditions" element={<TermsAndConditions />} />
         <Route path="/wellbeingpage" element={<WellbeingPage />} />
         <Route path="/bereavement" element={<BereavementAndLossPage />} />
-        <Route path="/healthyeating" element={<HealthyEatingPhysicalHealthPage />} />
+        <Route
+          path="/healthyeating"
+          element={<HealthyEatingPhysicalHealthPage />}
+        />
         <Route path="/mentalhealth" element={<MentalHealthPage />} />
         <Route path="/stressatwork" element={<StressAtWorkPage />} />
+        <Route path="/tos" element={<TOS />} />
       </Routes>
     </>
   );
