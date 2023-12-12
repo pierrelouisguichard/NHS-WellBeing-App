@@ -20,7 +20,7 @@ function Login() {
 
   return (
     <div className="login_page">
-      <div className="title">Login</div>
+      <div className="title-login">Login</div>
 
       <div className="email">Email</div>
       <input
