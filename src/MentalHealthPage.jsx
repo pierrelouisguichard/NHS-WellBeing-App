@@ -1,6 +1,8 @@
 // MentalHealthPage.js
 import React from 'react';
 import './MentalHealthPage.css'; // Make sure to import the CSS file
+import Navbar from './Navbar';
+import { Nav } from 'react-bootstrap';
 
 
 function MentalHealthPage() {
@@ -14,9 +16,33 @@ function MentalHealthPage() {
         Good mental health allows us to function in our day-to-day lives. This means that we are able to be productive in society, have meaningful relationships with others, are resilient enough to cope with change and loss, and also meet the demands placed on us in our everyday lives both inside and outside of work.
         When people experience a mental health issue, it usually means that they have difficulty in some or all of these areas. Having feelings of stress, anxiety, and low mood at times are completely normal; unfortunately, it is a part of everyday life! However, when these thoughts or feelings become frequent or so severe that they change our ability to cope or manage our lives, they can develop into a mental health problem. Because of this, they can affect our mental and emotional capabilities, our relationships, our views of ourselves, and our overall quality of life.
       </p>
+      <p className="mental-health-btn"> 
+        <a class="btn btn-light" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+        <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+        <button class="btn btn-light" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div>
+</div>  
+<Navbar/>
 
     </div>
   );
 }
 
 export default MentalHealthPage;
+
+
