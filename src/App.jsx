@@ -3,7 +3,7 @@ import Home from "./Home";
 import Error from "./Error";
 import Login from "./Login";
 import Search from "./Search";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Report from "./Report";
 import Report1 from "./Report1";
 import Report2 from "./Report2";
